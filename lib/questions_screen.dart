@@ -18,12 +18,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   void answerQuestion(String selectedAnswer) {
     widget.onSelectAnswer(selectedAnswer);
     setState(() {
-      if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
-      } else {
-        // Handle the case when all questions have been answered
-        print('All questions answered!');
-      }
     });
   }
 
